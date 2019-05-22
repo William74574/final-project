@@ -45,3 +45,8 @@ p{
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
+
+#link {
+  height: 50px !important;
+  width: 50px !important;
+}
