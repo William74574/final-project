@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <!-- linking the stylesheet, java and materialize-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="stylesheet.css">
     <meta charset="utf-8">
@@ -114,6 +115,7 @@
 
   </head>
   <body>
+    <!-- nav bar with hover pulse effect -->
   <ul class = "row">
     <li class = "col m3 center"> <a class = "hvr-pulse" href = "index.html"> Home </a></li>
     <li class = "col m3 center"> <a class = "hvr-pulse" href = "myart.html"> My Art </a></li>
@@ -122,7 +124,7 @@
   </ul>
 
   <div class="slideshow-container">
-
+<!-- slide show that contains text about the image and the image itself -->
   <div class="mySlides fade">
     <div class="numbertext">1 / 3</div>
     <img src="https://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg" style="width:100%">
@@ -140,13 +142,13 @@
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5E_70W9gfPbjRLdF4bR2qrHZnlo1FbAo0993cD2E7pHz_NW-PTQ" style="width:100%">
     <div class="text">Caption Three</div>
   </div>
-
+<!-- literally just a next or previous button that changes the slide -->
   <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
   <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
   </div>
   <br>
-
+<!-- the three dots you see below the slideshow to imply that there are three images  -->
   <div style="text-align:center">
     <span class="dot" onclick="currentSlide(1)"></span>
     <span class="dot" onclick="currentSlide(2)"></span>
@@ -164,7 +166,7 @@
   function currentSlide(n) {
     showSlides(slideIndex = n);
   }
-
+// takes all classes, if youre on the last slide and go forward you will go to the first slide, if youre on the first slide and go backwards you will go to the last slide. for whatever slide you are on, the corresponding dot will be darker than the other dots, displaying that you know what slide you are on. 
   function showSlides(n) {
     var i;
     var slides = document.getElementsByClassName("mySlides");
@@ -184,6 +186,7 @@
 
    <p class = "center"> This website will provide examples of my art work, what I like about art, and my inspiration. Feel free to navigate through out the website as you please.</p>
    <br>
+   <!-- this is the small instagram logo that you see at the bottom of the screen, click the image and it will take you to a link of my sisters art dedicated instagram -->
    <center> <a id="link" target="_blank" href="https://www.instagram.com/brittany_renee_art/"> <img src="https://theobriensabroad.com/wp-content/uploads/2017/08/instagram-logo-png-transparent-background.png" height="150px" width="150px"> </a> </center>
   </body>
 </html>

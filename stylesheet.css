@@ -1,32 +1,35 @@
+/* make all text white, centered, and 20 pixels */
 a{
   color: white;
   font-size: 20px;
   text-align: center;
 }
-
+/* insert the background image, have it cover the whole page and not repeat */
 body{
   background-image: url(https://images.wallpaperscraft.com/image/background_blemishes_dark_91678_1920x1080.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 
 }
-
+/* all headers are to be centered, white, and 45 pixels in size */
 h1{
   color: white;
   font-size: 45px;
   text-align: center;
 }
 
+/* make all text 20pixels in size, white, and centered  */
 p{
   font-size: 20px;
   color: white;
-  text-align: center;
+text-align: center;
 }
 
-.carousel{
-  height: 55vh;
-}
+.imgRow img{
+  width: 100%;
 
+}
+/* this is how the hover pule effect on the nav bar works.  */
 .hvr-pulse {
   display: inline-block;
   vertical-align: middle;
@@ -46,7 +49,29 @@ p{
   animation-iteration-count: infinite;
 }
 
+/* link to her instagram, the !important makes sure that it doesnt use materialze specifically for this thing on the page.  */
 #link {
   height: 50px !important;
   width: 50px !important;
+}
+/* Pulse */
+@-webkit-keyframes hvr-pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+@keyframes hvr-pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
 }

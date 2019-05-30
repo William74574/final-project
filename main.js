@@ -1,9 +1,7 @@
+// initialies slide show
 (function(){
   $(document).ready(init);
 
-  function init(){
-     $('.carousel').carousel();
-  }
   var slideIndex = 1;
   showSlides(slideIndex);
 
