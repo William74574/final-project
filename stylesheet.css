@@ -24,6 +24,9 @@ p{
   color: white;
 text-align: center;
 }
+.imgRow{
+  margin-bottom: 50px;
+}
 
 .imgRow img{
   width: 100%;
